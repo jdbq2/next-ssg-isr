@@ -5,7 +5,7 @@ import { NoFavorites } from "@/components/ui/";
 import { localFavorites } from "@/utils";
 import { FavoritePokemons } from "@/components/pokemon/FavoritePokemons";
 
-const index: NextPage = () => {
+const FavoritesPage: NextPage = () => {
   const [favoritePokemons, setFavoritePokemons] = useState<number[]>([]);
 
   useEffect(() => {
@@ -23,4 +23,4 @@ const index: NextPage = () => {
   );
 };
 
-export default index;
+export default FavoritesPage;
